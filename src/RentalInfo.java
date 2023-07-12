@@ -1,11 +1,11 @@
 import java.util.HashMap;
 
 public class RentalInfo {
-
+    final String REG = "regular";
     public String statement(Customer customer) {
         HashMap<String, Movie> movies = new HashMap<>();
-        movies.put("F001", new Movie("You've Got Mail", "regular"));
-        movies.put("F002", new Movie("Matrix", "regular"));
+        movies.put("F001", new Movie("You've Got Mail", REG));
+        movies.put("F002", new Movie("Matrix", REG));
         movies.put("F003", new Movie("Cars", "childrens"));
         movies.put("F004", new Movie("Fast & Furious X", "new"));
 
